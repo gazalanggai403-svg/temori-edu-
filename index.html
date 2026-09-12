@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEMORI | Functional Breakfast Bar</title>
+<style>
+:root{
+ --green:#365f3b; --green2:#4c7b4d; --cream:#f5eedb; --gold:#c9952e;
+ --dark:#243326; --white:#fffdf7;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--dark);line-height:1.6}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,253,247,.96);backdrop-filter:blur(8px);
+display:flex;justify-content:space-between;align-items:center;padding:14px 7%;border-bottom:1px solid #ded4bc}
+.logo{font-size:1.55rem;font-weight:900;letter-spacing:2px;color:var(--green)}
+nav a{color:var(--dark);text-decoration:none;margin-left:18px;font-size:.92rem;font-weight:bold}
+.hero{min-height:620px;padding:70px 8%;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;
+background:linear-gradient(90deg,rgba(28,47,28,.90),rgba(28,47,28,.48)),url('assets/temori-poster.png') center/cover}
+.hero h1{font-size:clamp(2.6rem,6vw,5.4rem);line-height:1;margin:0 0 22px;color:white;letter-spacing:-2px}
+.hero h1 span{color:#e7bd60}.hero p{max-width:650px;color:#f5eedb;font-size:1.12rem}
+.btn{display:inline-block;background:#e7bd60;color:#243326;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:800;margin-top:10px}
+.hero-card{background:rgba(255,253,247,.94);padding:26px;border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.hero-card img{width:100%;border-radius:14px;display:block}
+section{padding:75px 8%;max-width:1400px;margin:auto}
+.tag{color:var(--green2);font-weight:900;letter-spacing:2px;font-size:.8rem;text-transform:uppercase}
+h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.1;margin:8px 0 18px;color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--white);padding:28px;border-radius:18px;border:1px solid #e3d8c1;box-shadow:0 8px 24px rgba(50,50,30,.06)}
+.card h3{color:var(--green);margin-top:0}
+.highlight{background:var(--green);color:white;border-radius:22px;padding:42px;margin:20px 0}
+.highlight h2{color:#f7d57d}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{padding:24px;background:white;border-radius:16px;border-top:5px solid var(--gold)}
+.step b{display:block;font-size:2rem;color:var(--green);margin-bottom:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.fact{padding:18px 0;border-bottom:1px solid #ded4bc}.fact strong{color:var(--green);font-size:1.15rem}
+.quiz{background:#fffdf7;border:2px solid var(--green);border-radius:20px;padding:32px}
+.options button{display:block;width:100%;text-align:left;margin:10px 0;padding:14px;border:1px solid #cfc3aa;border-radius:10px;background:white;cursor:pointer;font-size:1rem}
+.options button:hover{background:#eef3e9}.result{font-weight:bold;margin-top:15px;color:var(--green)}
+footer{background:var(--green);color:#f8f1df;padding:45px 8%;text-align:center}
+.small{font-size:.9rem;opacity:.85}
+@media(max-width:850px){.hero,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.hero{padding-top:45px;min-height:auto}.hero-card{max-width:520px}nav a{display:none}}
+</style>
+</head>
+<body>
+<nav>
+ <div class="logo">TEMORI</div>
+ <div><a href="#about">About</a><a href="#nutrition">Nutrition</a><a href="#process">Process</a><a href="#impact">Impact</a><a href="#quiz">Quiz</a></div>
+</nav>
+
+<header class="hero">
+ <div>
+  <div class="tag" style="color:#f7d57d">Functional breakfast bar</div>
+  <h1>START THE DAY <span>STRONGER.</span></h1>
+  <p>TEMORI is a plant-based functional breakfast bar developed as a practical nutritional intervention for adolescents, combining locally available ingredients with protein, iron, and dietary fiber.</p>
+  <a class="btn" href="#about">Explore TEMORI ↓</a>
+ </div>
+ <div class="hero-card"><img src="assets/temori-poster.png" alt="TEMORI research poster"></div>
+</header>
+
+<section id="about">
+ <div class="tag">01 — Introduction</div>
+ <h2>What is TEMORI?</h2>
+ <div class="grid">
+  <article class="card"><h3>🥜 Plant-Based</h3><p>TEMORI is designed using locally sourced plant ingredients to provide a practical and convenient breakfast option.</p></article>
+  <article class="card"><h3>🩸 Nutritional Focus</h3><p>The concept focuses on supporting adequate intake of protein, iron, and fiber—nutrients relevant to adolescent nutrition.</p></article>
+  <article class="card"><h3>🌱 Local Innovation</h3><p>By prioritizing accessible ingredients, TEMORI demonstrates how local food resources can be developed into functional products.</p></article>
+ </div>
+</section>
+
+<section id="nutrition">
+ <div class="highlight">
+  <div class="tag" style="color:#f7d57d">02 — Why it matters</div>
+  <h2>Nutrition should be practical.</h2>
+  <p>Adolescence is a period of rapid growth. A convenient food product can help make nutritious choices easier to access, especially when busy schedules encourage skipping breakfast.</p>
+ </div>
+ <div class="two">
+  <div>
+   <div class="tag">Key focus</div><h2>Protein, iron & fiber.</h2>
+   <div class="fact"><strong>Protein</strong><br>Supports normal growth and maintenance of body tissues.</div>
+   <div class="fact"><strong>Iron</strong><br>Is an essential micronutrient involved in normal oxygen transport in the body.</div>
+   <div class="fact"><strong>Dietary fiber</strong><br>Contributes to a balanced diet and supports normal digestive function.</div>
+  </div>
+  <div class="card">
+   <h3>Important note</h3>
+   <p>TEMORI is presented as a functional food concept and is not intended to diagnose, treat, cure, or replace professional medical care for anemia or other nutritional conditions.</p>
+   <p>Actual nutritional values should be confirmed through laboratory analysis of the final formulation.</p>
+  </div>
+ </div>
+</section>
+
+<section id="process">
+ <div class="tag">03 — From ingredients to bar</div>
+ <h2>How TEMORI is developed</h2>
+ <div class="process">
+  <div class="step"><b>1</b><strong>Ingredient preparation</strong><p>Selected ingredients are prepared and processed into suitable forms.</p></div>
+  <div class="step"><b>2</b><strong>Mixing</strong><p>Ingredients are combined according to the intended formulation.</p></div>
+  <div class="step"><b>3</b><strong>Molding & baking</strong><p>The mixture is shaped into bars and processed into the final product.</p></div>
+  <div class="step"><b>4</b><strong>Cooling & packaging</strong><p>Bars are cooled before packaging and evaluation.</p></div>
+ </div>
+</section>
+
+<section id="impact">
+ <div class="tag">04 — Bigger impact</div>
+ <h2>More than just a snack.</h2>
+ <div class="grid">
+  <article class="card"><h3>SDG 2</h3><p><strong>Zero Hunger:</strong> encouraging accessible and nutritious food innovation.</p></article>
+  <article class="card"><h3>SDG 3</h3><p><strong>Good Health and Well-being:</strong> promoting awareness of balanced nutrition among adolescents.</p></article>
+  <article class="card"><h3>SDG 12</h3><p><strong>Responsible Consumption:</strong> highlighting the potential of locally available food resources.</p></article>
+ </div>
+</section>
+
+<section id="quiz">
+ <div class="quiz">
+  <div class="tag">05 — Learn with TEMORI</div>
+  <h2>Quick nutrition quiz</h2>
+  <p><strong>Which nutrient is particularly important for normal oxygen transport in the body?</strong></p>
+  <div class="options">
+   <button onclick="check(false,this)">A. Dietary fiber</button>
+   <button onclick="check(true,this)">B. Iron</button>
+   <button onclick="check(false,this)">C. Water only</button>
+  </div>
+  <div class="result" id="result"></div>
+ </div>
+</section>
+
+<section>
+ <div class="two">
+  <div><div class="tag">Research & education</div><h2>Explore the project behind the product.</h2><p>This website is designed as an educational companion to the TEMORI research poster, helping visitors understand the problem, product concept, nutritional focus, development process, and sustainability goals.</p></div>
+  <div class="card"><h3>Researchers</h3><p>• Sultan Muhammad A.R<br>• Muhammad Kenjiro W.A<br>• Gaza Langgai Generasi Suardin</p><p class="small">Educational project website for TEMORI.</p></div>
+ </div>
+</section>
+
+<footer><div class="logo" style="color:#f7d57d">TEMORI</div><p>Functional Breakfast Bar • Nutrition • Innovation • Local Potential</p><p class="small">© 2026 TEMORI Educational Project</p></footer>
+<script>
+function check(correct,el){
+ const r=document.getElementById('result');
+ if(correct){r.textContent="✓ Correct! Iron is essential for normal oxygen transport."; el.style.border="2px solid #365f3b";}
+ else {r.textContent="Not quite—try again!"; el.style.border="2px solid #b35b4c";}
+}
+</script>
+</body></html>
